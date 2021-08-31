@@ -19,7 +19,7 @@ const RegisterScreen = ({ navigation }) => {
     const handerRegister = () => {
         auth.createUserWithEmailAndPassword(email, password)
             .then((authUser) => {
-                authUser.user.update({
+                authUser.user.updateProfile({
                     displayName: name,
                     photoURL:
                         imageUrl ||
