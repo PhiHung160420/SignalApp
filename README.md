@@ -6,18 +6,17 @@ The challenge (for learning purpose) was to develop the Signal App. This project
 
 <p align="center">
   <kbd>
-    <img src="https://github.com/PhiHung160420/SignalApp/blob/main/assets/screenshot/register.png" title="Register App" width="220">
+    <img src="https://github.com/PhiHung160420/SignalApp/blob/main/assets/screenshot/register.png" title="Register App" width="200">
   </kbd>
   <kbd>
-    <img src="https://github.com/PhiHung160420/SignalApp/blob/main/assets/screenshot/login.png" title="Login App" width="220">
+    <img src="https://github.com/PhiHung160420/SignalApp/blob/main/assets/screenshot/login.png" title="Login App" width="200">
   </kbd>
    <kbd>
-    <img src="https://github.com/PhiHung160420/SignalApp/blob/main/assets/screenshot/chat-android.png" title="Chat Android" width="220">
+    <img src="https://github.com/PhiHung160420/SignalApp/blob/main/assets/screenshot/chat-android.png" title="Chat Android" width="200">
   </kbd>
   <kbd>
-    <img src="https://github.com/PhiHung160420/SignalApp/blob/main/assets/screenshot/chat-ios.png" title="Chat IOS" width="220">
+    <img src="https://github.com/PhiHung160420/SignalApp/blob/main/assets/screenshot/chat-ios.png" title="Chat IOS" width="200">
   </kbd>
-  <em>Some Screenshot of Signal App</em>
 </p>
 
 ### Installing
