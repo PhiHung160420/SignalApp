@@ -10,7 +10,6 @@ const LoginScreen = ({ navigation }) => {
 
     useEffect(() => {
         const unsubcribe = auth.onAuthStateChanged((authUser) => {
-            console.log(authUser);
             if (authUser) {
                 navigation.replace("Home");
             }
@@ -19,7 +18,11 @@ const LoginScreen = ({ navigation }) => {
         return unsubcribe;
     }, []);
 
-    const SignIn = () => {};
+    const handlerSignIn = () => {
+        auth.signInWithEmailAndPassword(email, password).catch((err) =>
+            alert(err.message)
+        );
+    };
 
     return (
         <KeyboardAvoidingView behavior="padding" style={styles.container}>
@@ -47,11 +50,12 @@ const LoginScreen = ({ navigation }) => {
                     type="password"
                     value={password}
                     onChangeText={(val) => setPassword(val)}
+                    onSubmitEditing={handlerSignIn}
                 />
                 <Button
                     title="Login"
                     containerStyle={styles.button}
-                    onPress={SignIn}
+                    onPress={handlerSignIn}
                 />
                 <Button
                     title="Register"

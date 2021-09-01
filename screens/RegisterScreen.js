@@ -8,7 +8,7 @@ const RegisterScreen = ({ navigation }) => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [imageUrl, setImageUrl] = useState("");
+    const [imageUrl, setImageUrl] = useState(null);
 
     useLayoutEffect(() => {
         navigation.setOptions({
@@ -21,9 +21,9 @@ const RegisterScreen = ({ navigation }) => {
             .then((authUser) => {
                 authUser.user.updateProfile({
                     displayName: name,
-                    photoURL:
-                        imageUrl ||
-                        "https://static.toiimg.com/thumb/resizemode-4,msid-76729750,imgsize-249247,width-720/76729750.jpg",
+                    photoURL: imageUrl
+                        ? imageUrl
+                        : "https://static.toiimg.com/thumb/resizemode-4,msid-76729750,imgsize-249247,width-720/76729750.jpg",
                 });
             })
             .catch((err) => alert(err.message));
