@@ -44,5 +44,5 @@ expo start
 ### Project Page
 #### https://expo.dev/@hung1604/SignalApp
 
-### Hosting
+### Website
 #### https://signalapp-1a8f7.web.app
